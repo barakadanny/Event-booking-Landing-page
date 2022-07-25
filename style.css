@@ -56,8 +56,8 @@ li {
 
 /* Navbar */
 .navbar {
-  /* background-color: var(--white-color); */
-  background-color: var(--gray-color);
+  background-color: var(--white-color);
+  /* background-color: var(--gray-color); */
   color: var(--primary-color);
   padding: 1rem 0;
   width: 100%;
@@ -163,4 +163,51 @@ nav.sticky {
 
 .menu-btn.open .menu-btn__burger::after {
   transform: translate(20px, 0px) rotate(-45deg);
+}
+
+/* ============== hero section ============ */
+.hero {
+  background-image: url("img/img-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 5rem 0;
+}
+
+.hero-content .hero-welcome-text {
+  color: var(--secondary-color);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content h1 {
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  color: var(--paragraph-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 2px solid var(--white-color);
+}
+
+.hero-content .hero-time {
+  color: var(--primary-color);
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.hero-content .hero-venue {
+  font-size: 14px;
+  font-weight: 500;
 }
