@@ -1,10 +1,10 @@
 const menuBtn = document.querySelector('.menu-btn');
-const header = document.getElementById('header');
 const navbar = document.getElementById('navbar');
 const navbarMenu = document.querySelector('.navbar-right');
 
 // burger menu action
 let menuOpen = false;
+
 menuBtn.addEventListener('click', () => {
   if (!menuOpen) {
     menuBtn.classList.add('open');
