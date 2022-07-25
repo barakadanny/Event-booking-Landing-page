@@ -24,6 +24,7 @@ body {
   line-height: 1.5;
   color: var(--primary-color);
   background-color: #fff;
+  /* overflow: hidden; */
 }
 
 /* general css */
@@ -219,6 +220,7 @@ nav.sticky {
   margin-bottom: 0.5rem;
   padding: 0.5rem;
   border: 2px solid var(--white-color);
+  max-width: 40rem;
 }
 
 .hero-content .hero-time {
@@ -237,10 +239,12 @@ nav.sticky {
   background-color: var(--primary-color);
   color: var(--white-color);
   padding: 1rem 0;
+  overflow: hidden;
 }
 
 .program-content {
   padding: 2rem 0;
+  position: relative;
 }
 
 .section-title {
@@ -264,8 +268,8 @@ nav.sticky {
 }
 
 .program-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   gap: 1rem;
 }
 
@@ -293,6 +297,7 @@ nav.sticky {
 .feature-item-text p {
   font-size: 12px;
   font-weight: 700;
+  max-width: 20rem;
 }
 
 .program-item .program-item-text p {
@@ -325,8 +330,8 @@ nav.sticky {
 }
 
 .feature-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   gap: 2rem;
 }
 
@@ -337,7 +342,7 @@ nav.sticky {
 }
 
 .feature-item .feature-item-img {
-  width: 250px;
+  width: 100px;
   overflow: hidden;
 }
 
@@ -440,6 +445,10 @@ nav.sticky {
 }
 
 .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -470,6 +479,10 @@ nav.sticky {
   transition: all 0.2s ease-in-out;
 }
 
+.Email-btn i {
+  margin-left: 0.3rem;
+}
+
 .Email-btn:hover {
   color: var(--secondary-color);
 }
@@ -483,6 +496,10 @@ nav.sticky {
 
 .logo-exposition-content {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo-exposition-content .logo-exposition-title {
@@ -491,11 +508,12 @@ nav.sticky {
 
 .logo-exposition-content .logo-exposition-p {
   margin-bottom: 2rem;
+  max-width: 40rem;
 }
 
 .logo-exposition-content .logo-exposition-l {
   border: 1px solid var(--gray-color);
-  padding: 1rem 0;
+  padding: 1rem 2rem;
 }
 
 /* history section css */
@@ -514,6 +532,8 @@ nav.sticky {
 
 .history-cards {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 1rem;
 }
@@ -572,4 +592,59 @@ nav.sticky {
 .footer-content .footer-adress {
   font-size: 12px;
   font-weight: 500;
+}
+
+/* ================= media query =============== */
+@media screen and (min-width: 768px) {
+  /* ===== navbar ====== */
+  .menu-btn {
+    display: none;
+  }
+
+  .navbar-right {
+    position: relative;
+    padding: 0;
+    background: transparent;
+    backdrop-filter: none;
+    transform: translateX(0);
+    transition: transform 0.4s;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-nav li {
+    font-size: 16px;
+  }
+
+  .navbar-nav li:hover {
+    color: var(--secondary-color);
+  }
+
+  .section-title::before {
+    right: 48%;
+  }
+
+  /* feature section css */
+  .feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 0 5rem;
+  }
+
+  .more-feature {
+    display: none;
+  }
+  
+  /* ============ about page ======== */
+  .about-p {
+    max-width: 40rem;
+    margin-bottom: 2rem !important;
+  }
+
+  .history-cards {
+    flex-direction: row;
+  }
 }
