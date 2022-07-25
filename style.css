@@ -24,7 +24,6 @@ body {
   line-height: 1.5;
   color: var(--primary-color);
   background-color: #fff;
-  /* overflow: hidden; */
 }
 
 /* general css */
@@ -637,7 +636,7 @@ nav.sticky {
   .more-feature {
     display: none;
   }
-  
+
   /* ============ about page ======== */
   .about-p {
     max-width: 40rem;
