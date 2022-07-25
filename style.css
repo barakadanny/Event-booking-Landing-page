@@ -51,12 +51,23 @@ img {
   background-color: var(--primary-color);
   color: white;
   padding: 0.1rem 0;
+  position: relative;
 }
 
 .top-header-content {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
   font-size: 12px;
+}
+
+.top-header-content li {
+  transition: all 0.2s ease-in-out;
+}
+
+.top-header-content li:hover {
+  color: var(--secondary-color);
 }
 
 /* Navbar */
@@ -111,6 +122,10 @@ nav.sticky {
   left: 0;
   right: 0;
   z-index: 1;
+}
+
+.navbar-header a {
+  font-weight: 900;
 }
 
 /* menu button css */
