@@ -62,7 +62,6 @@ img {
 /* Navbar */
 .navbar {
   background-color: var(--white-color);
-  /* background-color: var(--gray-color); */
   color: var(--primary-color);
   padding: 1rem 0;
   width: 100%;
@@ -226,7 +225,7 @@ nav.sticky {
 }
 
 .program-content {
- padding: 2rem 0;
+  padding: 2rem 0;
 }
 
 .section-title {
@@ -297,7 +296,7 @@ nav.sticky {
   background-color: var(--secondary-color);
   padding: 1.5rem 2rem;
   border: 1px solid var(--secondary-color);
-  ransition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .program-btn:hover {
@@ -414,31 +413,6 @@ nav.sticky {
   background: rgba(236, 82, 66, 0.05);
   backdrop-filter: blur(0.7rem);
   opacity: 0.5;
-}
-
-/* ======== Footer section css ========== */
-.footer {
-  color: var(--primary-color);
-  padding: 1rem 0;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.footer-content .footer-logo {
-  max-width: 30%;
-}
-
-.footer-content .footer-logo h1 {
-  font-size: 20px;
-}
-
-.footer-content .footer-adress {
-  font-size: 12px;
-  font-weight: 500;
 }
 
 /* ::::::::::======= About us page ======::::::::: */
@@ -558,4 +532,29 @@ nav.sticky {
 
 .history-card-p {
   font-size: 14px;
+}
+
+/* ======== Footer section css ========== */
+.footer {
+  color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-content .footer-logo {
+  max-width: 30%;
+}
+
+.footer-content .footer-logo h1 {
+  font-size: 20px;
+}
+
+.footer-content .footer-adress {
+  font-size: 12px;
+  font-weight: 500;
 }
