@@ -80,7 +80,7 @@ menuBtn.addEventListener('click', (e) => {
 });
 
 // generate Dynamic feature list
-for (let i = 0; i < featureData.length; i++) {
+for (let i = 0; i < featureData.length; i += 1) {
   const featureD = featureData[i];
 
   const feature = document.createElement('div');
