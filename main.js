@@ -2,6 +2,7 @@ const menuBtn = document.querySelector('.menu-btn');
 const navbar = document.getElementById('navbar');
 const navbarMenu = document.querySelector('.navbar-right');
 const featureList = document.querySelector('.feature-list');
+const showMore = document.querySelector('.more-btn');
 
 // Feature data Object
 const featureData = [
@@ -101,3 +102,12 @@ for (let i = 0; i < featureData.length; i += 1) {
   `;
   featureList.appendChild(feature);
 }
+
+// unhide feature List on click
+showMore.addEventListener('click', (e) => {
+  e.preventDefault();
+  featureList.classList.toggle('hide');
+  showMore.textContent = showMore.textContent.includes('See More')
+    ? `See Less`
+    : `See More`;
+});
