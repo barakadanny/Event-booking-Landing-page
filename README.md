@@ -8,11 +8,11 @@ This project is an event platform where people can get everything about hosting 
 - Css
 - JavaScript
 
-![screenshot](asset/Readme.png)
+![screenshot](img/Readme.png)
 
 ## Live Demo and video presentation
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://barakadanny.github.io/capstone-project-1/)
 
 [Project presentation](https://www.loom.com/share/64bb82044bea44059fd00db687ffccc6)
 
@@ -27,8 +27,6 @@ To get a local copy up and running follow these simple example steps.
 
 - Browser eg. Chrome
 - Text Editor eg. Vs Code, Atom, Sublime text, etc.
-
-### Setup
 
 ### Install
 
