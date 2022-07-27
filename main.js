@@ -108,6 +108,6 @@ showMore.addEventListener('click', (e) => {
   e.preventDefault();
   featureList.classList.toggle('hide');
   showMore.textContent = showMore.textContent.includes('See More')
-    ? `See Less`
-    : `See More`;
+    ? 'See Less'
+    : 'See More';
 });
