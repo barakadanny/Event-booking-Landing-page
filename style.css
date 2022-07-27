@@ -630,6 +630,11 @@ nav.sticky {
   padding: 1rem 0;
 }
 
+.about-footer {
+  color: white;
+  background-color: var(--primary-color) !important;
+}
+
 .footer-content {
   display: flex;
   justify-content: center;
