@@ -56,7 +56,7 @@ img {
 
 .top-header-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 1rem;
   font-size: 12px;
@@ -89,6 +89,10 @@ img {
   justify-content: space-between;
 }
 
+.logo span {
+  color: var(--secondary-color);
+}
+
 .navbar-right {
   display: block;
   position: fixed;
@@ -109,6 +113,19 @@ img {
 
 .navbar-nav li:hover {
   color: var(--gray-color);
+}
+
+.nav-btn {
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-btn:hover {
+  background-color: transparent;
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
 }
 
 .show-menu {
@@ -194,6 +211,12 @@ nav.sticky {
 
 .overlay {
   background-color: rgb(255, 255, 255, 0.7);
+}
+
+.hero-bg {
+  background-image: url("img/herobackg-1.png");
+  background-position: center;
+  background-size: cover;
   padding: 5rem 0;
 }
 
@@ -218,6 +241,7 @@ nav.sticky {
   line-height: 1.5;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
+  background-color: rgb(255, 255, 255, 0.7);
   border: 2px solid var(--white-color);
   max-width: 40rem;
 }
@@ -268,28 +292,43 @@ nav.sticky {
 
 .program-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 }
 
 .program-item {
   display: flex;
-  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
   padding: 0.5rem 1rem;
   background-color: var(--soft-black);
+  border: 1px solid var(--soft-black);
+  transition: all 0.3s ease-in-out;
+}
+
+.program-item:hover {
+  border: 1px solid var(--white-color);
 }
 
 .program-item .program-item-img {
-  width: 100px;
-  height: 100px;
+  width: auto;
+  height: auto;
   overflow: hidden;
+}
+
+.program-img {
+  max-width: 50px;
 }
 
 .program-item .program-item-text {
   padding: 0 0.5rem;
+  width: 50%;
 }
 
-.program-item .program-item-text h3 {
+.program-item h3 {
+  font-size: 16px;
   color: var(--secondary-color);
 }
 
@@ -305,9 +344,20 @@ nav.sticky {
 
 .program-cta {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+}
+
+.program-btn-b {
+  text-decoration: underline;
+  display: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.program-btn-b:hover {
+  color: var(--secondary-color);
 }
 
 .program-btn {
@@ -332,6 +382,12 @@ nav.sticky {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
   gap: 2rem;
+  overflow: hidden;
+  height: 510px;
+}
+
+.hide {
+  height: auto;
 }
 
 .feature-item {
@@ -574,6 +630,11 @@ nav.sticky {
   padding: 1rem 0;
 }
 
+.about-footer {
+  color: white;
+  background-color: var(--primary-color) !important;
+}
+
 .footer-content {
   display: flex;
   justify-content: center;
@@ -621,8 +682,41 @@ nav.sticky {
     color: var(--secondary-color);
   }
 
+  .nav-btn {
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+
+  .nav-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+  }
+
   .section-title::before {
     right: 48%;
+  }
+
+  .hero-bg {
+    background-image: url('img/bkgrnd.png');
+  }
+
+  /* program section */
+  .program-item {
+    flex-direction: column;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .program-item .program-item-text {
+    width: 100%;
+  }
+
+  .program-btn {
+    display: none;
+  }
+
+  .program-btn-b {
+    display: block;
   }
 
   /* feature section css */
@@ -631,6 +725,7 @@ nav.sticky {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 0 5rem;
+    height: auto;
   }
 
   .more-feature {

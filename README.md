@@ -1,56 +1,45 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# EventWork Platform
 
-# Project Name
-
-> Description the project.
-
+This project is an event platform where people can get everything about hosting an event, eg. Freelancer, decorations,etc. This project is the result a my Capstone project 1
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Html
+- Css
+- JavaScript
 
-## Live Demo (if available)
+![screenshot](img/Readme.png)
 
-[Live Demo Link](https://livedemo.com)
+## Live Demo and video presentation
 
+[Live Demo Link](https://barakadanny.github.io/capstone-project-1/)
+
+[Project presentation](https://www.loom.com/share/64bb82044bea44059fd00db687ffccc6)
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+To run this project clone it with `git clone https://github.com/barakadanny/capstone-project-1.git`
+then run from a browser
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Setup
+- Browser eg. Chrome
+- Text Editor eg. Vs Code, Atom, Sublime text, etc.
 
 ### Install
 
-### Usage
+Install linters to handle some common Errors, You can have description about [Linters here](https://github.com/microverseinc/linters-config)
 
-### Run tests
+👤 **Baraka Danny**
 
-### Deployment
+- GitHub: [@barakadan](https://github.com/barakadanny)
+- LinkedIn: [danny baraka](https://www.linkedin.com/in/danny-baraka-589156169/)
 
+## Credit
 
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+[@Cindy Shin](https://www.behance.net/adagio07) Thanks for this amazing design
 
 ## 🤝 Contributing
 
