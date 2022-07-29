@@ -3,6 +3,10 @@ const navbar = document.getElementById('navbar');
 const navbarMenu = document.querySelector('.navbar-right');
 const featureList = document.querySelector('.feature-list');
 const showMore = document.querySelector('.more-btn');
+const userPopup = document.querySelector('.user-login-popup');
+const loginBtn = document.querySelector('.login-btn');
+const userPopupLayer = document.getElementById('user-popup-layer');
+const userPopupClose = document.querySelector('.userpopup-close');
 
 // Feature data Object
 const featureData = [
@@ -49,6 +53,26 @@ const featureData = [
     image: 'img/profile-3.jpg',
   },
 ];
+
+// Login user popup
+loginBtn.addEventListener('click', () => {
+  document.body.classList.add('no-scroll');
+  userPopupLayer.classList.add('user-popup-layer');
+  userPopup.classList.add('hide-user-login-popup');
+});
+
+// Login user Popup close
+userPopupClose.addEventListener('click', () => {
+  document.body.classList.remove('no-scroll');
+  userPopupLayer.classList.remove('user-popup-layer');
+  userPopup.classList.remove('hide-user-login-popup');
+});
+
+// userPopupLayer.addEventListener('click', () => {
+//   document.body.classList.remove('no-scroll');
+//   userPopupLayer.classList.remove('user-popup-layer');
+//   userPopup.classList.remove('hide-user-login-popup');
+// });
 
 // burger menu action
 let menuOpen = false;

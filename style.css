@@ -24,6 +24,7 @@ body {
   line-height: 1.5;
   color: var(--primary-color);
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 /* general css */
@@ -44,6 +45,23 @@ li {
 
 img {
   max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: transparent;
 }
 
 /* top navbar */
@@ -74,6 +92,119 @@ img {
 
 .top-header-content li:hover {
   color: var(--secondary-color);
+}
+
+/* .hide-user-login-popup {
+  display: none;
+} */
+.no-scroll {
+  overflow-y: hidden;
+}
+
+/* User Login Popup */
+.user-popup-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(0.1rem);
+  z-index: 1000;
+  transition: all 0.1s ease-out;
+}
+
+.user-login-popup {
+  position: absolute;
+  top: 1.5rem;
+  right: 5rem;
+  width: 20rem;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  border-radius: 5px;
+  border: 2px solid var(--secondary-color);
+  transform: translateX(1000%);
+  transition: all 0.4s ease-in-out;
+}
+
+.hide-user-login-popup {
+  transform: translateX(0);
+  animation: user-login-popup 0.5s cubic-bezier(0.76, 0.07, 0.08, 0.78);
+}
+
+.userpopup-close {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.userpopup-close:hover {
+  color: var(--secondary-color);
+}
+
+.user-login-popup input:last-child {
+  width: 15rem;
+  padding: 0.5rem;
+  border: 1px solid var(--gray-color);
+  outline: none;
+  border-radius: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-login-popup-content-body-form label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.user-login-popup-content-body-register p {
+  margin-top: 0.5rem;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.remember-f {
+  margin: 0.5rem 0;
+}
+
+.user-login-popup-content-body-register p a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* user login animation keyframes */
+@keyframes user-login-popup {
+  0% {
+    transform: translateX(150%);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-20%);
+    opacity: 0.4;
+  }
+
+  75% {
+    transform: translateX(20%);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.user-login-popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user-login-popup-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Navbar */
