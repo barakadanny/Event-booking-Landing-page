@@ -25,6 +25,7 @@ body {
   color: var(--primary-color);
   background-color: #fff;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* general css */
@@ -70,6 +71,7 @@ img {
   color: white;
   padding: 0.1rem 0;
   position: relative;
+  overflow: hidden;
 }
 
 .top-header-content {
@@ -94,9 +96,6 @@ img {
   color: var(--secondary-color);
 }
 
-/* .hide-user-login-popup {
-  display: none;
-} */
 .no-scroll {
   overflow-y: hidden;
 }
@@ -115,9 +114,10 @@ img {
 }
 
 .user-login-popup {
+  /* display: block; */
   position: absolute;
   top: 1.5rem;
-  right: 5rem;
+  right: 1rem;
   width: 20rem;
   background-color: var(--primary-color);
   display: flex;
@@ -126,7 +126,7 @@ img {
   padding: 1rem 0;
   border-radius: 5px;
   border: 2px solid var(--secondary-color);
-  transform: translateX(1000%);
+  transform: translateX(150%);
   transition: all 0.4s ease-in-out;
 }
 
@@ -166,6 +166,13 @@ img {
 .remember-f {
   margin: 0.5rem 0;
 }
+
+/* nav css */
+.navbar-header a {
+  font-weight: 900;
+}
+
+/* end nav small css */
 
 .user-login-popup-content-body-register p a {
   color: var(--secondary-color);
@@ -270,10 +277,6 @@ nav.sticky {
   left: 0;
   right: 0;
   z-index: 1;
-}
-
-.navbar-header a {
-  font-weight: 900;
 }
 
 /* menu button css */
@@ -787,6 +790,13 @@ nav.sticky {
 
 /* ================= media query =============== */
 @media screen and (min-width: 768px) {
+  /* top navbar */
+  .user-login-popup {
+    position: absolute;
+    top: 1.5rem;
+    right: 3.5rem;
+  }
+
   /* ===== navbar ====== */
   .menu-btn {
     display: none;
