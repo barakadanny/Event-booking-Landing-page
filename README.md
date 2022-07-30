@@ -8,13 +8,17 @@ This project is an event platform where people can get everything about hosting 
 - Css
 - JavaScript
 
+### Home page
+
 ![screenshot](img/Readme.png)
 
-## Live Demo and video presentation
+### Login pop up
+
+![Popup screenshot](img/Popup.png)
+
+## Live Demo
 
 [Live Demo Link](https://barakadanny.github.io/capstone-project-1/)
-
-[Project presentation](https://www.loom.com/share/64bb82044bea44059fd00db687ffccc6)
 
 ## Getting Started
 
@@ -45,7 +49,7 @@ Install linters to handle some common Errors, You can have description about [Li
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/barakadanny/capstone-project-1/issues).
 
 ## Show your support
 
