@@ -342,15 +342,12 @@ nav.sticky {
   transform: translate(20px, 0) rotate(-45deg);
 }
 
-.main {
-  overflow-y: scroll;
-}
-
 /* ============== hero section ============ */
 .hero {
   background-image: url("img/img-2.jpg");
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .overlay {
@@ -520,6 +517,7 @@ nav.sticky {
 /* =========== Feature section css =========== */
 .feature-content {
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 .feature-list {
@@ -605,6 +603,7 @@ nav.sticky {
   color: var(--white-color);
   padding: 1rem 0;
   position: relative;
+  overflow: hidden;
 }
 
 .partner-title {
