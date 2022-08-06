@@ -26,6 +26,7 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 /* general css */
@@ -227,6 +228,11 @@ img {
   justify-content: space-between;
 }
 
+.navbar-brand {
+  font-size: 20px;
+  user-select: none;
+}
+
 .logo span {
   color: var(--secondary-color);
 }
@@ -334,6 +340,10 @@ nav.sticky {
 
 .menu-btn.open .menu-btn__burger::after {
   transform: translate(20px, 0) rotate(-45deg);
+}
+
+.main {
+  overflow-y: scroll;
 }
 
 /* ============== hero section ============ */
