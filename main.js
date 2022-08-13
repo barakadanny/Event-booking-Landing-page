@@ -68,12 +68,6 @@ userPopupClose.addEventListener('click', () => {
   userPopup.classList.remove('hide-user-login-popup');
 });
 
-// userPopupLayer.addEventListener('click', () => {
-//   document.body.classList.remove('no-scroll');
-//   userPopupLayer.classList.remove('user-popup-layer');
-//   userPopup.classList.remove('hide-user-login-popup');
-// });
-
 // burger menu action
 let menuOpen = false;
 
