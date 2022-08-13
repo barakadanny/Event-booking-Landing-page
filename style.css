@@ -851,6 +851,7 @@ nav.sticky {
 
   .navbar-nav {
     flex-direction: row;
+    gap: 2rem;
   }
 
   .navbar-nav li {
